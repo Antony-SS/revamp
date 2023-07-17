@@ -12,7 +12,7 @@ function App() {
   return (
   <ChakraProvider>
       <Router>
-      <NavBar/>
+      {/* <NavBar/> */}
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/work" element={<Work />}/>
