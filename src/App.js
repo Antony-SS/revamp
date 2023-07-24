@@ -5,8 +5,8 @@ import {
   Writing,
   About
 } from "./components";
-
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+
 
 const theme = extendTheme({
   fonts: {
@@ -20,7 +20,6 @@ function App() {
   return (
   <ChakraProvider theme= {theme}>
       <Router>
-      {/* <NavBar/> */}
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/work" element={<Work />}/>
