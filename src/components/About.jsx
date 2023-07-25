@@ -1,8 +1,11 @@
 import React from "react";
+import { Container } from "@chakra-ui/react";
 
 function About() {
   return (
-    <h1>ABOUT</h1>
+    <Container bg="#F3D250" minWidth="100%" minHeight="100vh" display="flex" flexDirection="column">
+      <text>ABOUT</text>
+    </Container>
   );
 }
 
