@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, GridItem, Link, Box, Text, Center, Square } from "@chakra-ui/react";
+import { Grid, GridItem, Link, Box, Text, Image, Square } from "@chakra-ui/react";
 
 function Home() {
   return (
@@ -8,7 +8,7 @@ function Home() {
         <Box as={Link} href="/work" display="block" w="100%" h="100%" padding={0} margin={0}>
           <Square h = "100%">
             <Image>
-              
+
             </Image>
           </Square>
           <Box position="absolute" bottom="22vh" left={4}>
