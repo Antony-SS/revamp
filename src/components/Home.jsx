@@ -22,7 +22,7 @@ function Home() {
       <GridItem colSpan={1} bg="#F78888" p={4} position= "relative">
         <Box as={Link} href="/writing" display="block" w="100%" h="100%" paddingBottom= "10vh" margin={0}>
           <Square h="100%">
-            <Image src = {require("../resources/pencil.png")} h= "35vh"/>
+            <Image src = {require("../resources/pencil1.png")} h= "38vh"/>
           </Square>
           <Box position="absolute" bottom={0} left={0} right={0} h="40%"  display="flex" flexDirection="column" textAlign="left" paddingLeft= "6%">
             <Heading fontSize={25}> WRITING </Heading>
@@ -34,7 +34,10 @@ function Home() {
         </Box>
       </GridItem>
       <GridItem colSpan={1} bg="#F3D250" p={4} position="relative">
-      <Box as={Link} href="/about" display="block" w="100%" h="100%" padding={0} margin={0}>
+      <Box as={Link} href="/about" display="block" w="100%" h="100%" paddingBottom= "10vh" margin={0}>
+        <Square h="100%">
+            <Image src = {require("../resources/id.png")} h= "38vh"/>
+        </Square>
       <Box position="absolute" bottom={0} left={0} right={0} h="40%" display="flex" flexDirection="column" textAlign="left" paddingLeft= "6%">
         <Heading fontSize={25}> ABOUT </Heading>
             <Box position="relative" bottom={-2} left={0} w= "35px" h="4px" bg="#000000"/>
