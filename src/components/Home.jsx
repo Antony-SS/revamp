@@ -8,7 +8,7 @@ function Home() {
       <GridItem rowSpan={2} colSpan={1} bg="#90CCF4" p={4} position= "relative" >
         <Box as={Link} href="/work" display="block" w="100%" h="100%" padding={0} margin={0}>
           <Square h = "100%">
-            <Image src = {require("../resources/desk.png")} alt="DeskSetUp" w= "65vh" h= "65vh"/>
+            <Image src = {require("../resources/deskfinal.png")} alt="DeskSetUp" w= "65vh" h= "65vh"/>
           </Square>
           <Box position="absolute" bottom={0} left={0} right={0} h="25%"  display="flex" textAlign = "left" flexDirection="column" paddingLeft="6%">
             <Heading fontSize={25}> WORK </Heading>
