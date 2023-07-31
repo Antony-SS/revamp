@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid, GridItem, Link, Box, Text, Square, Image, Heading } from "@chakra-ui/react";
-
+import "./Shared/GridItem.css";
 
 function Home() {
   return (
 <Grid maxHeight = "100vh" minHeight="100vh" width= "100%" templateColumns="2fr 1fr" templateRows="1fr 1fr" gap={0}>
-      <GridItem rowSpan={2} colSpan={1} bg="#90CCF4" p={4} position= "relative" >
+      <GridItem rowSpan={2} colSpan={1} bg="#90CCF4" p={4} position= "relative" className="grid-item">
         <Box as={Link} href="/work" display="block" w="100%" h="100%" padding={0} margin={0}>
           <Square h = "100%">
             <Image src = {require("../resources/deskfinal.png")} alt="DeskSetUp" w= "70vh" h= "70vh"/>
@@ -19,7 +19,7 @@ function Home() {
           </Box>
         </Box>
       </GridItem>
-      <GridItem colSpan={1} bg="#F78888" p={4} position= "relative">
+      <GridItem colSpan={1} bg="#F78888" p={4} position= "relative" className="grid-item">
         <Box as={Link} href="/writing" display="block" w="100%" h="100%" paddingBottom= "10vh" margin={0}>
           <Square h="100%" padding={0}>
             <Image src = {require("../resources/pencil1.png")} h= "36vh"/>
@@ -33,7 +33,7 @@ function Home() {
           </Box>
         </Box>
       </GridItem>
-      <GridItem colSpan={1} bg="#F3D250" p={4} position="relative">
+      <GridItem colSpan={1} bg="#F3D250" p={4} position="relative" className="grid-item">
       <Box as={Link} href="/about" display="block" w="100%" h="100%" paddingBottom= "10vh" margin={0}>
         <Square h="100%">
             <Image src = {require("../resources/id.png")} h= "36vh"/>

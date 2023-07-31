@@ -1,0 +1,8 @@
+.grid-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    /* transform: scale(0.95); */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) inset; /* Add box shadow to create the sinking effect */
+  }
