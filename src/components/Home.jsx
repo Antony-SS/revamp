@@ -43,10 +43,10 @@ function Home() {
         </Square>
       <Box position="absolute" bottom={0} left={0} right={0}  h= {{base: "21%" , md: "36%"}} display="flex" flexDirection="column" textAlign="left" paddingLeft= "6%">
         <Heading fontSize={30}> ABOUT </Heading>
-            <Box position="relative" bottom={-2} left={0} w= "35px" h="4px" bg="#000000"/>
-            <Text position={"relative"} top={4} fontSize={{base: 16, md: 14, lg: 16}}>
-             Learn a little about me
-            <br/>and contact me</Text>
+        <Box position="relative" bottom={-2} left={0} w= "35px" h="4px" bg="#000000"/>
+        <Text position={"relative"} top={4} fontSize={{base: 16, md: 14, lg: 16}}>
+          Learn a little about me
+        <br/>and contact me</Text>
         </Box>
       </Box>
       </GridItem>
