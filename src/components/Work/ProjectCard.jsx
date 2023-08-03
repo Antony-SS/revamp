@@ -4,40 +4,32 @@ import { Card } from "@chakra-ui/react";
 
 function ProjectCard({ title, description, imageUrl, technologies }) {
   return (
-    <Card paddingLeft={0} paddingRight={0} background={"#1A202C"}>
+    <Card paddingLeft={0} paddingRight={0} background="#90CCF4" maxWidth={350}>
         <CardHeader paddingBottom={0}>
             <Heading paddingBottom={2} color={"white"}>{title}</Heading>
-        <HStack justifyContent={"flex-start"} padding={0}>
-                <Link href = "https://github.com/Antony-SS/Song-Share-Frontend" isExternal>
-                    <Image src="https://assets-global.website-files.com/61d1b6e84887f53fef1dcdf2/631b45e07d98cfb364e5951f_github-white.png" height={6}/>
-                </Link>
-                <Link href = "https://github.com/Antony-SS/Song-Share-Frontend" isExternal>
-                    <Image src="https://toppng.com/uploads/preview/link-icon-gray-grey-link-icon-11562963096unfmtzimkj.png" height={6}/>
-                </Link>
-            </HStack>
         </CardHeader>
         <CardBody paddingTop={2} paddingLeft={0} paddingRight={0} paddingBottom={0}>
             <VStack>
                 <Box paddingLeft={5} paddingRight={5} paddingBottom={2}>
                     <Text color = "#A1ADC0" fontSize={15}>{description}</Text>
                 </Box>
-                <Image padding = {0} src = {require(`../../resources/${imageUrl}`)} alt= {title} w="100%" h="250px" objectFit="cover"/>
+                <Image padding = {0} src = {require(`../../resources/${imageUrl}`)} alt= {title} w="100%" h="190px" objectFit="fill"/>
                 
             </VStack>
         </CardBody>
         <CardFooter paddingTop={3} paddingBottom={3}>
         <HStack width={"100%"}>
-            <HStack width={"50%"} justifyContent={"flex-start"} padding={0}>
+            <HStack width={"40%"} justifyContent={"flex-start"} padding={0}>
                 <Link href = "https://github.com/Antony-SS/Song-Share-Frontend" isExternal>
-                    <Image src="https://assets-global.website-files.com/61d1b6e84887f53fef1dcdf2/631b45e07d98cfb364e5951f_github-white.png" height={8}/>
+                    <Image src= {require("../../resources/ghwhite.png")} height={6}/>
                 </Link>
                 <Link href = "https://github.com/Antony-SS/Song-Share-Frontend" isExternal>
-                    <Image src="https://toppng.com/uploads/preview/link-icon-gray-grey-link-icon-11562963096unfmtzimkj.png" height={7}/>
+                    <Image src= {require("../../resources/link.png")} height={6}/>
                 </Link>
             </HStack>
-            <Box width= "50%" justifyContent={"flex-end"} textAlign={"right"} padding={0}>
+            <Box width= "60%" justifyContent={"flex-end"} textAlign={"right"} padding={0}>
                     {technologies.map((tech, index) => (
-                        <Badge key={index} variant = 'subtle' colorScheme="red" mr="1" mb="1">
+                        <Badge variant = "solid" fontSize="small" colorScheme="yellow" mr="1" mb="1">
                     {tech}
                     </Badge>
                     ))}

@@ -1,14 +1,12 @@
-import React from "react"
-import { Box, Text } from "@chakra-ui/react"
+import React from "react";
+import { Link, Box, Image } from "@chakra-ui/react";
 
-function Logo(props) {
+function Logo({z_index, left, top}) {
   return (
-    <Box {...props}>
-      <Text fontSize="lg" fontWeight="bold">
-        Logo
-      </Text>
+    <Box zIndex={z_index} as= {Link} boxSize={"fit-content"} href="/" position={"fixed"} left={left} top={top} padding={2}>
+        <Image src = {require ("../../../resources/logo.png")} h= "7vh"></Image>
     </Box>
-  )
-}
+  );
+};
 
 export default Logo;
