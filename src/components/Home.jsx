@@ -1,12 +1,14 @@
 import React from "react";
 import { Grid, GridItem, Link, Box, Text, Square, Image, Heading, Container, VStack } from "@chakra-ui/react";
-import NavBar from "./Shared/Navbar/Logo";
+import Logo from "./Shared/Navbar/Logo";
+import Contact from "./Shared/Navbar/Contact";
 import "./Shared/GridItem.css";
 
 function Home() {
   return (
   <VStack width= "100%" height= "100%" margin={0} padding={0} alignItems={"flex-start"}>
-    <NavBar position = "fixed" left = {10} top = {6}/>
+    <Logo position = "fixed" left = {10} top = {6}/>
+    <Contact position = "fixed" right = {12} top={8}/>
     <Grid minHeight="100vh" width= "100%" 
     templateColumns={{ base: "1fr", md: "2fr 1fr" }} 
     templateRows={{ base: "1fr", md: "1fr 1fr" }} 

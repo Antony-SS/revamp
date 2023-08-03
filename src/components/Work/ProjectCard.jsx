@@ -4,16 +4,16 @@ import { Card } from "@chakra-ui/react";
 
 function ProjectCard({ title, description, imageUrl, technologies }) {
   return (
-    <Card paddingLeft={0} paddingRight={0} background="#90CCF4" maxWidth={350}>
+    <Card variant={"filled"} paddingLeft={0} paddingRight={0} background="#b5e4e5" maxWidth={350}>
         <CardHeader paddingBottom={0}>
-            <Heading paddingBottom={2} color={"white"}>{title}</Heading>
+            <Heading paddingBottom={1} color={"white"}>{title}</Heading>
         </CardHeader>
         <CardBody paddingTop={2} paddingLeft={0} paddingRight={0} paddingBottom={0}>
             <VStack>
                 <Box paddingLeft={5} paddingRight={5} paddingBottom={2}>
                     <Text color = "#A1ADC0" fontSize={15}>{description}</Text>
                 </Box>
-                <Image padding = {0} src = {require(`../../resources/${imageUrl}`)} alt= {title} w="100%" h="190px" objectFit="fill"/>
+                <Image paddingLeft = {5} paddingRight = {5} src = {require(`../../resources/${imageUrl}`)} alt= {title} w="100%" h="190px" objectFit="fill"/>
                 
             </VStack>
         </CardBody>
