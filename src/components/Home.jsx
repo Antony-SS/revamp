@@ -6,9 +6,9 @@ import "./Shared/GridItem.css";
 
 function Home() {
   return (
-  <VStack width= "100%" maxHheight= "100vh" margin={0} padding={0} alignItems={"flex-start"} position={{base: "absolute", md: "fixed"}}>
-    <Logo position = "fixed" left = {10} top = {6}/>
-    <Contact position = "fixed" right = {12} top= "9px"/>
+  <VStack width= "100%" margin={0} padding={0} alignItems={"flex-start"} position={{base: "absolute", md: "fixed"}}>
+    <Logo position = "fixed" left = {{base: 6, md: 10}} top= {{base: 2, md: 6}}/>
+    <Contact position = "fixed" right = {12} top= {{base: "20px", md: "35px"}}/>
     <Grid height="100vh"  width= "100%" 
     templateColumns={{ base: "1fr", md: "2fr 1fr" }} 
     templateRows={{ base: "1fr", md: "1fr 1fr" }} 
@@ -21,9 +21,9 @@ function Home() {
         <Square h = "100%">
           <Image src = {require("../resources/deskfinal.png")} alt="DeskSetUp" h = {{base: "48vh" , md: "50vh" , lg: "70vh"}}/>
         </Square>
-      <Box position="absolute" bottom={0} left={0} right={0} h = {{base: "21%", md: "18%" }}  display="flex" textAlign = "left" flexDirection="column" paddingLeft="6%">
+      <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "18%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "6%"}}>
         <Heading textColor={"white"} fontSize={30}> WORK </Heading>
-        <Box position="relative" bottom={-2} left={0} w="35px" h="4px" bg="white"/>
+        <Box position="relative" bottom={-2} left= {0}  w= "35px" h="4px" bg="white"/>
         <Text textColor = "white" position={"relative"} top={5} fontSize={{base: 16, md: 14, lg: 16}}>
               A few projects I am proud of 
             <br/>for work, for school, and others just for fun</Text>
@@ -35,7 +35,7 @@ function Home() {
         <Square h="100%" padding={0}>
           <Image src = {require("../resources/pencil1.png")} h= {{base: "48vh", md: "28vh", lg: "36vh"}}/>
         </Square>
-        <Box position="absolute" bottom={0} left={0} right={0} h= {{base: "21%" , md: "36%"}}  display="flex" flexDirection="column" textAlign="left" paddingLeft= "6%">
+        <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "36%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "6%"}}>
           <Heading textColor = "white" fontSize={30}> WRITING </Heading>
           <Box position="relative" bottom={-2} left={0} w="35px" h="4px" bg="white"/>
             <Text position={"relative"} textColor= "white" top={4} fontSize={{base: 16, md: 14, lg: 16}}>
@@ -49,7 +49,7 @@ function Home() {
       <Square h="100%">
         <Image src = {require("../resources/id.png")} h= {{base: "48vh", md: "28vh", lg: "36vh"}}/>
       </Square>
-    <Box position="absolute" bottom={0} left={0} right={0}  h= {{base: "21%" , md: "36%"}} display="flex" flexDirection="column" textAlign="left" paddingLeft= "6%">
+    <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "36%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "6%"}}>
       <Heading fontSize={30} textColor={"white"}> ABOUT </Heading>
       <Box position="relative" bottom={-2} left={0} w= "35px" h="4px" bg="white"/>
       <Text textColor = "white" position={"relative"} top={4} fontSize={{base: 16, md: 14, lg: 16}}>
