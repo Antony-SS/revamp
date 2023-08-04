@@ -4,7 +4,7 @@ import { Card } from "@chakra-ui/react";
 
 function ProjectCard({ title, description, imageUrl, technologies }) {
   return (
-    <Card variant={"filled"} paddingLeft={0} paddingRight={0} background="#b5e4e5" maxWidth={350}>
+    <Card variant={"outline"} paddingLeft={0} paddingRight={0} background="#b5e4e5" maxWidth={350}>
         <CardHeader paddingBottom={0}>
             <Heading paddingBottom={1} color={"white"}>{title}</Heading>
         </CardHeader>

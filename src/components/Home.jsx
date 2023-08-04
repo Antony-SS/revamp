@@ -6,17 +6,17 @@ import "./Shared/GridItem.css";
 
 function Home() {
   return (
-  <VStack width= "100%" height= "100%" margin={0} padding={0} alignItems={"flex-start"}>
+  <VStack width= "100%" maxHheight= "100vh" margin={0} padding={0} alignItems={"flex-start"} position={{base: "absolute", md: "fixed"}}>
     <Logo position = "fixed" left = {10} top = {6}/>
-    <Contact position = "fixed" right = {12} top={8}/>
-    <Grid minHeight="100vh" width= "100%" 
+    <Contact position = "fixed" right = {12} top= "9px"/>
+    <Grid height="100vh"  width= "100%" 
     templateColumns={{ base: "1fr", md: "2fr 1fr" }} 
     templateRows={{ base: "1fr", md: "1fr 1fr" }} 
     gap={0}
     position={"absolute"}
     zIndex={-1}
     >
-    <GridItem rowSpan={{base: 1, md: 2}} colSpan={1} bg="#90CCF4" p={4} position= "relative" className="grid-item" minHeight={{ base : "100vh", md: "auto"}} padding={5}>
+    <GridItem rowSpan={{base: 1, md: 2}} colSpan={1} bg="#90CCF4" p={4} position= "relative" className="grid-item" minHeight={{ base : "100vh", md: "100vh"}} padding={5}>
       <Box as={Link} href="/work" position={"relative"} zIndex={1000} display="block" w="100%" h="100%" padding={0} margin={0}>
         <Square h = "100%">
           <Image src = {require("../resources/deskfinal.png")} alt="DeskSetUp" h = {{base: "48vh" , md: "50vh" , lg: "70vh"}}/>
