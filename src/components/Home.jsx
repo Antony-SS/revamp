@@ -1,11 +1,14 @@
 import React from "react";
-import { Grid, GridItem, Link, Box, Text, Square, Image, Heading, Container, VStack } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme, Grid, GridItem, Link, Box, Text, Square, Image, Heading, VStack, theme } from "@chakra-ui/react";
 import Logo from "./Shared/Navbar/Logo";
 import Contact from "./Shared/Navbar/Contact";
 import "./Shared/GridItem.css";
+import CreateTheme from "../ChakraStyles/CreateTheme";
 
 function Home() {
+  const theme = CreateTheme("blue");
   return (
+  <ChakraProvider theme = {theme}>
   <VStack width= "100%" margin={0} padding={0} alignItems={"flex-start"} position={{base: "absolute", md: "fixed"}}>
     <Logo position = "fixed" left = {{base: 6, md: 10}} top= {{base: 2, md: 6}}/>
     <Contact position = "fixed" right = {12} top= {{base: "20px", md: "35px"}}/>
@@ -60,6 +63,7 @@ function Home() {
     </GridItem>
   </Grid>
 </VStack>
+</ChakraProvider>
   );
 };
 

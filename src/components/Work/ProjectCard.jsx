@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Image, Text, Badge, CardHeader, Heading, CardBody, VStack, HStack, CardFooter, Link} from "@chakra-ui/react";
 import { Card } from "@chakra-ui/react";
 
-function ProjectCard({ title, description, imageUrl, technologies }) {
+function ProjectCard({ title, description, imageUrl, technologies, zIndex }) {
   return (
-    <Card variant={"fill"} paddingLeft={0} paddingRight={0} background="#658EAA" maxWidth={350}>
+    <Card variant={"fill"} paddingLeft={0} paddingRight={0} background="#658EAA" maxWidth={350} zIndex = {zIndex}>
         <CardHeader paddingBottom={0}>
             <Heading paddingBottom={1} color={"white"}>{title}</Heading>
         </CardHeader>
