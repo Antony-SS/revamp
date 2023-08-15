@@ -3,7 +3,7 @@ import {Box, HStack } from "@chakra-ui/react";
 import Logo from "./Logo";
 import Contact from "./Contact";
 
-function Navbar({backgroundColor, zIndex}) {
+function Navbar({backgroundColor, zIndex, navItems}) {
   return (
     <HStack width= "100%" position={"absolute"} top={0} left={0} background={backgroundColor} zIndex={zIndex} height={"15vh"}>
         <Box width= "50%" justifyContent={"flex-end"} textAlign={"right"} padding={0} position={"relative"} background={backgroundColor} height={"15vh"}>

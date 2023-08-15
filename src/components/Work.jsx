@@ -19,27 +19,33 @@ function Work(bg) {
       <ProjectCard title={"DIGITAL ID"} 
         description = {"Project exploring decentralized identity management and passwordless auth leveraging modified ERC721 NFTs. Created as part of a summer internship. Includes whitepaper and my MVP."} 
         imageUrl={"DID.png"} 
-        technologies={["JS", "Solidity", "REST API"]}/>
+        technologies={["JS", "Solidity", "REST API"]}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
       <ProjectCard title={"MOSAICS"}
         description = {"Favorite DSA proejct. Created a mosaic, swapping tiles of base image with nearest neighbor from an image database based on pixel color. Implemented a KD tree to optimize NN search from n^2 to Log n."}
         imageUrl={"mosaic.png"} 
-        technologies={["JS", "Solidity", "REST API"]}/>
+        technologies={["C++"]}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
       <ProjectCard title={"SONG VOTE"}
-        description = {"A comprehensive tutorial for developers to create a voting dapp on the Algorand blockchain. Created for a Gitcoin bounty, published to the Algorand developer docs, and voted 2nd best community tutorial."}
+        description = {"A comprehensive tutorial for developers to create a voting dapp on the Algorand blockchain. Created for a Gitcoin bounty, published to the Algorand developer docs, and voted best community tutorial."}
         imageUrl={"algorand.png"} 
-        technologies={["pyTEAL", "JSX"]}/>
+        technologies={["pyTEAL", "JSX"]}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
       <ProjectCard title={"SONGSHARE"}
         description = {"A dapp built on the Rinkeby ethereum testnet to exchange and browse music reccomendations.  Doesn't need to be decentralized, but was good intro to blockchain development."}
         imageUrl={"songshare.png"} 
-        technologies={["JS", "Solidity"]}/>
+        technologies={["JS", "Solidity"]}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
       <ProjectCard title={"RECIPEATS"}
-        description = {"A terminal app to find recipes to cook based on ingredients you have in your fridge. Utilizes webscraping to find recipes.  Maintains a shopping list that lasts beyond the runtime of the program. Written in C++."}
+        description = {"Find recipes to cook based on ingredients you have in your fridge. Utilizes webscraping to find recipes.  Maintains a shopping list that lasts beyond the runtime of the program. Written in C++."}
         imageUrl={"recipeats.png"} 
-        technologies={["C++, cURL"]}/>
+        technologies={["C++", "cURL"]}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
       <ProjectCard title={"PATHFINDER"}
-        description = {"Takes an array of data representing elevations in a region, generates a ppm image representing the area's elevations, highlights the path of least elevation change in green. Could be improved with recursive backtracking."}
+        description = {"Takes data representing elevations in a region, generates contour map, and highlights the path of least elevation change in green.  Could be improved with recursive backtracking."}
         imageUrl={"pathfinder.png"} 
-        technologies={["C++"]}/>
+        technologies={["C++"]}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
     </SimpleGrid>
     </VStack>
     </ChakraProvider>
