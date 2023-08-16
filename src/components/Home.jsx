@@ -1,17 +1,25 @@
 import React from "react";
-import { ChakraProvider, extendTheme, Grid, GridItem, Link, Box, Text, Square, Image, Heading, VStack, theme } from "@chakra-ui/react";
+import { ChakraProvider, Grid, GridItem, Link, Box, Text, Square, Image, Heading, VStack, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button } from "@chakra-ui/react";
 import Logo from "./Shared/Navbar/Logo";
 import Contact from "./Shared/Navbar/Contact";
 import "./Shared/GridItem.css";
 import CreateTheme from "../ChakraStyles/CreateTheme";
+import { useState } from "react";
 
 function Home() {
   const theme = CreateTheme("blue");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
   return (
   <ChakraProvider theme = {theme}>
   <VStack width= "100%" margin={0} padding={0} alignItems={"flex-start"} position={{base: "absolute", md: "fixed"}}>
     <Logo position = "fixed" left = {{base: 6, md: 10}} top= {{base: 2, md: 6}}/>
-    <Contact position = "fixed" right = {12} top= {{base: "20px", md: "35px"}}/>
+    <Contact position = "fixed" right = {12} top= {{base: "20px", md: "35px"}} setIsModalOpen={setIsModalOpen}/>
     <Grid height="100vh"  width= "100%" 
     templateColumns={{ base: "1fr", md: "2fr 1fr" }} 
     templateRows={{ base: "1fr", md: "1fr 1fr" }} 
@@ -62,6 +70,21 @@ function Home() {
     </Box>
     </GridItem>
   </Grid>
+  <Modal isOpen={isModalOpen} onClose={closeModal} isCentered = {true}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>Contact Me</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              {/* Add your contact form or any other content here */}
+              {/* For example: */}
+              <Text>Feel free to reach out to me via email or social media.</Text>
+            </ModalBody>
+            <ModalFooter>
+              <Button colorScheme="blue" onClick={closeModal}>Close</Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
 </VStack>
 </ChakraProvider>
   );
