@@ -43,7 +43,7 @@ function Work(bg) {
         links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
       <ProjectCard title={"PATHFINDER"}
         description = {"Takes data representing elevations in a region, generates contour map, and highlights the path of least elevation change in green.  Could be improved with recursive backtracking."}
-        imageUrl={"pathfinder.png"} 
+        imageUrl={"pathfinder.png"}
         technologies={["C++"]}
         links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
     </SimpleGrid>
