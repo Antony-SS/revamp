@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "./Shared/Navbar/Navbar";
 import CreateTheme from "../ChakraStyles/CreateTheme";
 
-function Work(bg) {
+function Work() {
   const theme = CreateTheme("#90CCF4");
   return (
   <ChakraProvider theme={theme}>

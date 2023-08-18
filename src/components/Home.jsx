@@ -1,10 +1,11 @@
 import React from "react";
-import { ChakraProvider, Grid, GridItem, Link, Box, Text, Square, Image, Heading, VStack, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button } from "@chakra-ui/react";
+import { ChakraProvider, Grid, GridItem, Link, Box, Text, Square, Image, Heading, VStack } from "@chakra-ui/react";
 import Logo from "./Shared/Navbar/Logo";
 import Contact from "./Shared/Navbar/Contact";
 import "./Shared/GridItem.css";
 import CreateTheme from "../ChakraStyles/CreateTheme";
 import { useState } from "react";
+import { ContactModal } from ".";
 
 function Home() {
   const theme = CreateTheme("blue");
@@ -13,7 +14,6 @@ function Home() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
 
   return (
   <ChakraProvider theme = {theme}>
@@ -70,21 +70,7 @@ function Home() {
     </Box>
     </GridItem>
   </Grid>
-  <Modal isOpen={isModalOpen} onClose={closeModal} isCentered = {true}>
-          <ModalOverlay />
-          <ModalContent>
-            <ModalHeader>Contact Me</ModalHeader>
-            <ModalCloseButton />
-            <ModalBody>
-              {/* Add your contact form or any other content here */}
-              {/* For example: */}
-              <Text>Feel free to reach out to me via email or social media.</Text>
-            </ModalBody>
-            <ModalFooter>
-              <Button colorScheme="blue" onClick={closeModal}>Close</Button>
-            </ModalFooter>
-          </ModalContent>
-        </Modal>
+  <ContactModal isModalOpen={isModalOpen} onClose={closeModal}/>
 </VStack>
 </ChakraProvider>
   );
