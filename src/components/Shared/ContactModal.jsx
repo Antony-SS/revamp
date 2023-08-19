@@ -1,26 +1,27 @@
 
-import { Modal, ModalHeader, ModalOverlay, ModalContent, ModalBody, ModalFooter, ModalCloseButton, Button, Text, Heading, HStack } from "@chakra-ui/react"
+import { Modal, ModalHeader, ModalOverlay, ModalContent, ModalBody, ModalFooter, ModalCloseButton, Text, Heading, HStack, Link } from "@chakra-ui/react"
 import React from "react"
 
 
 function ContactModal ({isModalOpen, onClose}) {
     return (
-        <Modal isOpen = {isModalOpen} onClose = {onClose} isCentered = {true} size={'lg'}>
+        <Modal isOpen = {isModalOpen} onClose = {onClose} isCentered = {true} size={{base: 'sm', md: 'lg'}}>
             <ModalOverlay />
             <ModalContent>
-                <ModalHeader><Heading fontSize={25}>CONTACT</Heading></ModalHeader>
+                <ModalHeader paddingBottom={0}><Heading fontSize={20}>CONTACT</Heading></ModalHeader>
                 <ModalCloseButton />
                     <ModalBody>
-                        
-                        <Text fontSize={35}>antony@silvettischmitt.net</Text>
-                        <HStack>
-                            <Heading fontSize={28}>github</Heading>
-                            <Heading fontSize={28}>twitter</Heading>
-                            <Heading fontSize={28}>linkedin</Heading>
+
+                        <Link href="mailto:antony@silvettischmitt.net" isExternal><Text fontSize={{base: 26, md: 34 }}>antony@silvettischmitt.net</Text></Link>
+                        <HStack paddingTop={0}>
+                            <Link href="https://github.com/Antony-SS" isExternal><Heading fontSize={18}>github</Heading></Link>
+                            <Heading fontSize={18}> | </Heading>
+                            <Link href="https://twitter.com/Johann_Antony" isExternal><Heading fontSize={18}>twitter</Heading></Link>
+                            <Heading fontSize={18}> | </Heading>
+                            <Link href="https://www.linkedin.com/in/antony-silvetti-schmitt/" isExternal><Heading fontSize={18}>linkedin</Heading></Link>
                         </HStack>
                     </ModalBody>
                 <ModalFooter>
-                    <Button colorScheme="blue" onClick={onClose}>Close</Button>
                 </ModalFooter>
             </ModalContent>
         </Modal>

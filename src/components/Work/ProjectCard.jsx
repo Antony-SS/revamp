@@ -2,9 +2,6 @@ import React from "react";
 import { Box, Image, Text, Badge, CardHeader, Heading, CardBody, VStack, HStack, CardFooter, Link} from "@chakra-ui/react";
 import { Card } from "@chakra-ui/react";
 
-function Helper(link, identifier) {
-
-}
 
 function ProjectCard({ title, description, imageUrl, technologies, links, zIndex }) {
   return (

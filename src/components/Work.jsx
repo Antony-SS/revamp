@@ -1,15 +1,23 @@
-import { Box, Center, ChakraProvider, Container, Heading, SimpleGrid, VStack, extendTheme } from "@chakra-ui/react";
+import { Box, Center, ChakraProvider, Container, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
 import ProjectCard from "./Work/ProjectCard";
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./Shared/Navbar/Navbar";
 import CreateTheme from "../ChakraStyles/CreateTheme";
+import { ContactModal } from ".";
+
 
 function Work() {
   const theme = CreateTheme("#90CCF4");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
   <ChakraProvider theme={theme}>
   <VStack background="#90CCF4" height = "10" width= "100%" margin={0} padding={0} alignItems={"center"} position={"absolute"}>
-    <Navbar backgroundColor={"#90CCF4"}/>
+    <Navbar backgroundColor={"#90CCF4"} setIsModalOpen={setIsModalOpen}/>
     <Container minWidth = "100%" display= "flex" flexDirection= "column" top = "15vh" paddingTop={"10vh"} position = "relative" textAlign= "center" alignItems={"center"} justifyContent={"center"} margin={0}>
       <Box border="4px solid rgba(0, 0, 0, 0.2)" borderRadius="10px" padding={0} margin={0} textAlign={"center"} justifyContent={"center"}>
         <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 90, md: 200, lg: 240}} textColor= "black" opacity={.15}>W O R K</Heading>
@@ -47,6 +55,7 @@ function Work() {
         technologies={["C++"]}
         links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
     </SimpleGrid>
+    <ContactModal isModalOpen={isModalOpen} onClose={closeModal}/>
     </VStack>
     </ChakraProvider>
   );
