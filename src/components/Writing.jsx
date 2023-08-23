@@ -3,7 +3,7 @@ import { ChakraProvider, Container, VStack, Box, Heading } from "@chakra-ui/reac
 import CreateTheme from "../ChakraStyles/CreateTheme";
 import Navbar from "./Shared/Navbar/Navbar";
 import { useState } from "react";
-import { ContactModal } from ".";
+import { ContactModal, Footer } from ".";
 
 function Writing() {
   const theme = CreateTheme("#F78888");
@@ -23,6 +23,7 @@ function Writing() {
       </Box>
     </Container>
     <ContactModal isModalOpen={isModalOpen} onClose={closeModal}/>
+      <Footer/>
       </VStack>
     </ChakraProvider>
   );
