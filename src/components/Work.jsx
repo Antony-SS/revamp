@@ -1,4 +1,4 @@
-import { Box, ChakraProvider, Container, Heading, SimpleGrid, VStack, Text } from "@chakra-ui/react";
+import { Box, ChakraProvider, Container, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
 import ProjectCard from "./Work/ProjectCard";
 import React, {useState} from "react";
 import Navbar from "./Shared/Navbar/Navbar";

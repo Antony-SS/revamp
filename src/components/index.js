@@ -6,3 +6,4 @@ export { default as NavBar } from "./Shared/Navbar/Navbar";
 export { default as Logo } from "./Shared/Navbar/Logo"
 export { default as ContactModal } from "./Shared/ContactModal"
 export { default as Footer } from "./Shared/Footer"
+export { default as WritingCard } from "./../components/Writing/WritingCard"
