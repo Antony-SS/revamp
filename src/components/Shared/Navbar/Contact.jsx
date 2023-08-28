@@ -1,6 +1,5 @@
 import React from "react";
 import {Box, Image } from "@chakra-ui/react";
-import { useState } from "react";
 
 function Contact({z_index, right, top, position, setIsModalOpen}) {
 
