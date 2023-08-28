@@ -20,7 +20,7 @@ function Work() {
     <Navbar backgroundColor={"#90CCF4"} setIsModalOpen={setIsModalOpen}/>
     <Container minWidth = "100%" display= "flex" flexDirection= "column" top = "15vh" paddingTop={"10vh"} position = "relative" textAlign= "center" alignItems={"center"} justifyContent={"center"} margin={0}>
       <Box border="4px solid rgba(0, 0, 0, 0.2)" borderRadius="10px" padding={0} margin={0} textAlign={"center"} justifyContent={"center"}>
-        <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 90, md: 200, lg: 240}} textColor= "black" opacity={.15}>W O R K</Heading>
+        <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 80, md: 200, lg: 240}} textColor= "black" opacity={.15}>W O R K</Heading>
       </Box>
     </Container>
     <Container

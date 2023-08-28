@@ -18,7 +18,7 @@ function About() {
     <Stack direction={"column"} position = "absolute" top = "25vh" height = "10" width= "100%" margin={0} padding={0} alignItems={"center"}>
       <Container minWidth = "100%" display= "flex" flexDirection= "column"  textAlign= "center" alignItems={"center"} justifyContent={"center"} margin={0} paddingBottom={{base: "20px", md: "45px"}}>
             <Box border="4px solid rgba(0, 0, 0, 0.2)" borderRadius="10px" padding={0} margin={0} textAlign={"center"} justifyContent={"center"}>
-          <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 80, md: 160, lg: 230}} textColor= "black" opacity={.15}>A B O U T</Heading>
+          <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 70, md: 160, lg: 230}} textColor= "black" opacity={.15}>A B O U T</Heading>
         </Box>
       </Container>
       <Stack direction={{base: "column", md: "row"}} alignItems={{base: "center", md: "left"}}>

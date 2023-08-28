@@ -15,7 +15,7 @@ function Footer({top}) {
       width={"100%"}
     >
     <Box width={"85%"} height= "1px" margin={0} padding={0} backgroundColor={"white"} opacity={.5}></Box>
-    <Box width={"50%"} textAlign={"center"}>
+    <Box width={"65%"} textAlign={"center"}>
         <Heading textColor={"white"} fontSize={14} fontWeight={"light"}>Copyright © 2023 Antony Silvetti-Schmitt</Heading>
     </Box>
     <Box alignContent={"center"}>
