@@ -29,11 +29,13 @@ function About() {
               Hi, I'm Antony, a senior studying engineering at UIUC.  I'm interested in building technology to help humans and make our world a better place.
             </Text>
             <Text fontSize={{base: 12, md: 14}}>
-              I'm majoring in Industrial Engineering and Minoring in Computer Science.  I was born in Germany, raised in ( a suburb of ) Chicago, and take any opportunity to travel.
+              I'm majoring in Industrial Engineering and Minoring in Computer Science.  I was born in Germany and raised in ( a suburb of ) Chicago.
               <br/><br/>
-              Currently I'm diving into robotics & autonomy.  I'm taking classes on mobile robotics and doing research on autonomous vehicles.  I see real potential for this technology to improve the human condition, and this is by far the most excited I've ever been about engineering.  
+              Currently I'm diving into robotics & autonomy.  I'm taking a class on mobile robotics and doing research on autonomous vehicles.  I see real potential for this technology to improve the human condition, and this is by far the most excited I've ever been about engineering.  
               <br/><br/>
-              Previously, I spent ~3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and lead a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
+              Previously, I spent ~ 3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and lead a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
+              <br/><br/>
+              On a less serious note, I play soccer, <Link textColor={"grey"} href="https://www.goodreads.com/user/show/159524269-antony-silvetti-schmitt" isExternal>read</Link> fiction, love the outdoors, and am attempting to learn guitar.
             </Text>
           </Stack>
         </Container>
