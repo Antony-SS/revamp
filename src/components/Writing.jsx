@@ -28,7 +28,7 @@ function Writing() {
     type = {"Developer Logs"}
     date={"Summer 2023"}/>
     <WritingCard position = "absolute" title={"Ethereum Yellow Paper Summary"} 
-    description={"This is a summary of the Ethereum Yellowpaper to allow anyone with general knowledge of computer science to understand Ethereum.  I wrote the 'Blocks, States, and Transitions' section and helped edited some other sections.  I thought this was a good way to ensure the team was actually understanding the Yellow Paper, not just regurgitating techincal jargon."}
+    description={"This is a summary of the Ethereum Yellowpaper to allow anyone with general knowledge of computer science to understand Ethereum.  I wrote the 'Blocks, States, and Transitions' section and edited some other sections. This was a good way to ensure the team was actually understanding the Yellow Paper, not just regurgitating techincal jargon."}
     link={"https://antony-ss.notion.site/antony-ss/Digital-Identity-Blockchain-ERC721-NFTs-for-Digital-Identity-Management-and-Passwordless-Authenti-024e10e4b1d048b18133b5c7bfc0e6a9"}
     type = {"Technical Writing"}
     date={"Spring 2023"}/>
