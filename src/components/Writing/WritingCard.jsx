@@ -5,13 +5,13 @@ import { Card } from "@chakra-ui/react";
 
 function WritingCard({ title, description, date, type, link }) {
     return (
-        <Card variant={"filled"} backgroundColor={"#F78888"} textColor={"white"} width= {{base: "75%", md: "55%"}}>
+        <Card variant={"filled"} backgroundColor={"#F78888"} textColor={"blackAlpha.800"} width= {{base: "75%", md: "65%"}}>
             <CardHeader paddingBottom={0}>
-                <Link href= {link} isExternal><Heading>{title}</Heading></Link>
+                <Link href= {link} isExternal><Heading fontSize = {{base: 24, md: 30 }}>{title}</Heading></Link>
             </CardHeader>
-            <CardBody paddingTop={3} textColor={"blackAlpha.600"}> 
-                <Heading paddingBottom = {2} fontWeight={"light"} fontSize={14}>{type} | {date}</Heading>
-                <Text fontSize={16}>{description}</Text>
+            <CardBody paddingTop={4}> 
+                <Heading textColor={"blackAlpha.500"} paddingBottom = {2} fontWeight={"light"} fontSize={14}>{type} | {date}</Heading>
+                <Text textColor={"blackAlpha.700"} fontSize={16}>{description}</Text>
             </CardBody>
         </Card>
     );

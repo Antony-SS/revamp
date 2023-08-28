@@ -38,38 +38,38 @@ function Work() {
     >
 
     <SimpleGrid position={"relative"} spacing={16} width = "100%" margin={0} top = {{base: "5vh", md: "8vh", lg: "12vh"}} minChildWidth={275} justifyItems={"center"} paddingLeft={"10%"} paddingRight={"10%"}>
-      <ProjectCard title={"DIGITAL ID"} 
+      <ProjectCard title={"Digital ID"} 
         description = {"Project exploring decentralized identity management and passwordless auth leveraging modified ERC721 NFTs. Created as part of a summer internship. Includes whitepaper and my MVP."} 
         imageUrl={"DID.png"} 
-        technologies={["JS", "Solidity", "REST API"]}
-        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
-      <ProjectCard title={"MOSAICS"}
+        technologies={["JS", "Solidity"]}
+        links= {[["https://github.com/Antony-SS/Decentralized-Digital-Identifier", "gh"], ["https://antony-ss.notion.site/Digital-Identity-Blockchain-ERC721-NFTs-for-Digital-Identity-Management-and-Passwordless-Authenti-024e10e4b1d048b18133b5c7bfc0e6a9", "web"]]}/>
+      <ProjectCard title={"Mosaics"}
         description = {"Favorite DSA proejct. Created a mosaic, swapping tiles of base image with nearest neighbor from an image database based on pixel color. Implemented a KD tree to optimize NN search from n^2 to Log n."}
         imageUrl={"mosaic.png"} 
         technologies={["C++"]}
-        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
-      <ProjectCard title={"SONG VOTE"}
+        links= {[["https://github.com/Antony-SS/release-f22_final/tree/main/mp_mosaics/src", "gh"]]}/>
+      <ProjectCard title={"Song Vote"}
         description = {"A comprehensive tutorial for developers to create a voting dapp on the Algorand blockchain. Created for a Gitcoin bounty, published to the Algorand developer docs, and voted best community tutorial."}
         imageUrl={"algorand.png"} 
         technologies={["pyTEAL", "JSX"]}
-        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
-      <ProjectCard title={"SONGSHARE"}
+        links= {[["https://github.com/Antony-SS/Song-Vote-on-Algorand-Tutorial", "gh"], ["https://developer.algorand.org/tutorials/song-vote-on-algorand-create-and-deploy-a-fully-functioning-dapp/", "web"]]}/>
+      <ProjectCard title={"Song Share"}
         description = {"A dapp built on the Rinkeby ethereum testnet to exchange and browse music reccomendations.  Doesn't need to be decentralized, but was good intro to blockchain development."}
         imageUrl={"songshare.png"} 
         technologies={["JS", "Solidity"]}
-        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
-      <ProjectCard title={"RECIPEATS"}
+        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://song-share.netlify.app/", "web"]]}/>
+      <ProjectCard title={"RecipEats"}
         description = {"Find recipes to cook based on ingredients you have in your fridge. Utilizes webscraping to find recipes.  Maintains a shopping list that lasts beyond the runtime of the program. Written in C++."}
         imageUrl={"recipeats.png"} 
         technologies={["C++", "cURL"]}
-        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
-      <ProjectCard title={"PATHFINDER"}
+        links= {[["https://github.com/Antony-SS/RecipEats", "gh"]]}/>
+      <ProjectCard title={"Pathfinder"}
         description = {"Takes data representing elevations in a region, generates contour map, and highlights the path of least elevation change in green.  Could be improved with recursive backtracking."}
         imageUrl={"pathfinder.png"}
         technologies={["C++"]}
-        links= {[["https://github.com/Antony-SS/Song-Share-Frontend", "gh"], ["https://github.com/Antony-SS/Song-Share-Frontend", "web"]]}/>
+        links= {[["https://github.com/Antony-SS/EasiestPathFinder", "gh"]]}/>
     </SimpleGrid>
-    <Footer/>
+    <Footer top={"15vh"}/>
     </Container>
 ]
  

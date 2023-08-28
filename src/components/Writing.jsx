@@ -23,15 +23,20 @@ function Writing() {
       </Box>
     </Container>
     <WritingCard position = "absolute" title={"Personal Website Revamp Logs"} 
-    description={"I didn't like my old personal website, so I decided to redo it using React, Chakra UI, and Midjourney for graphics.  I wrote logs every so often to track my progress."}
+    description={"I decided to redo my personal website using React, Chakra UI, and Midjourney for graphics.  I wrote logs every so often to track my progress."}
     link={"https://antony-ss.notion.site/Personal-Website-Revamp-Logs-92eb52bcbc654b9997a1a698186f9490?pvs=4"}
     type = {"Developer Logs"}
     date={"Summer 2023"}/>
-        <WritingCard position = "absolute" title={"Personal Website Revamp Logs"} 
-    description={"I didn't like my old personal website, so I decided to redo it using React, Chakra UI, and Midjourney.  I wrote logs every so often to track my progress."}
-    link={"https://antony-ss.notion.site/Personal-Website-Revamp-Logs-92eb52bcbc654b9997a1a698186f9490?pvs=4"}
-    type = {"Developer Logs"}
-    date={"Summer 2023"}/>
+    <WritingCard position = "absolute" title={"Ethereum Yellow Paper Summary"} 
+    description={"This is a summary of the Ethereum Yellowpaper to allow anyone with general knowledge of computer science to understand Ethereum.  I wrote the 'Blocks, States, and Transitions' section and helped edited some other sections.  I thought this was a good way to ensure the team was actually understanding the Yellow Paper, not just regurgitating techincal jargon."}
+    link={"https://antony-ss.notion.site/antony-ss/Digital-Identity-Blockchain-ERC721-NFTs-for-Digital-Identity-Management-and-Passwordless-Authenti-024e10e4b1d048b18133b5c7bfc0e6a9"}
+    type = {"Technical Writing"}
+    date={"Spring 2023"}/>
+        <WritingCard position = "absolute" title={"Digital Identity & Blockchain: ERC721 NFTs for Digital Identity Management and Passwordless Authentication"} 
+    description={"After a summer of research and product developement I wrote a paper synthesizing my thoughts blockchain for digital identity, and reccomending how Synchrony position itself in the space going forwards."}
+    link={"https://antony-ss.notion.site/antony-ss/Digital-Identity-Blockchain-ERC721-NFTs-for-Digital-Identity-Management-and-Passwordless-Authenti-024e10e4b1d048b18133b5c7bfc0e6a9"}
+    type = {"Technical Writing"}
+    date={"Summer 2022"}/>
     <ContactModal isModalOpen={isModalOpen} onClose={closeModal}/>
     <Footer/>
       </VStack>

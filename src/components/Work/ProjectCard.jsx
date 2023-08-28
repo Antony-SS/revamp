@@ -5,15 +5,15 @@ import { Card } from "@chakra-ui/react";
 
 function ProjectCard({ title, description, imageUrl, technologies, links, zIndex }) {
   return (
-    <Card variant={"fill"} paddingLeft={0} paddingRight={0} background="#658EAA" maxWidth={350} zIndex = {zIndex}>
+    <Card variant={"fill"} paddingLeft={0} paddingRight={0} background="#90CCF4" maxWidth={350} zIndex = {zIndex} border={"1.5px solid black"}>
         <CardHeader paddingBottom={0}>
-            <Heading paddingBottom={1} color={"white"}>{title}</Heading>
+            <Heading paddingBottom={1} color={"blackAlpha.800"}>{title}</Heading>
         </CardHeader>
         <CardBody paddingTop={4} paddingLeft={0} paddingRight={0} paddingBottom={0}>
                 <Image paddingLeft = {5} paddingRight = {5} paddingBottom={3} src = {require(`../../resources/${imageUrl}`)} alt= {title} w="100%" h="190px" objectFit="fill"/>
             <VStack>
                 <Box paddingLeft={5} paddingRight={5} paddingBottom={2}>
-                    <Text color = "white" fontSize={16}>{description}</Text>
+                    <Text color = "blackAlpha.700" fontSize={16}>{description}</Text>
                 </Box>
             </VStack>
         </CardBody>
