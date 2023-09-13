@@ -22,6 +22,11 @@ function Writing() {
         <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 80, md: 200, lg: 240}} textColor= "black" opacity={.15}>WRITING</Heading>
       </Box>
     </Container>
+    <WritingCard position = "absolute" title={"Robotics & Autonmous Systems Logs"} 
+    description={"I want to work/go to grad school in this area, so I have ~ 5 months to learn as much as possible.  These logs help me structure my thoughts, retain what I learn, and track my progress.  Entries will reference both my research with AUVSL & my Mobile Robotics Class."}
+    link={"https://antony-ss.notion.site/Robotics-Autonomous-Systems-Logs-723b38accd31492e892a4acb43d1ea85?pvs=4"}
+    type = {"Learning Logs"}
+    date={"Fall 2023"}/>
     <WritingCard position = "absolute" title={"Personal Website Revamp Logs"} 
     description={"I decided to redo my personal website using React, Chakra UI, and Midjourney for graphics.  I wrote logs every so often to track my progress."}
     link={"https://antony-ss.notion.site/Personal-Website-Revamp-Logs-92eb52bcbc654b9997a1a698186f9490?pvs=4"}
@@ -29,7 +34,7 @@ function Writing() {
     date={"Summer 2023"}/>
     <WritingCard position = "absolute" title={"Ethereum Yellow Paper Summary"} 
     description={"This is a summary of the Ethereum Yellowpaper to allow anyone with general knowledge of computer science to understand Ethereum.  I wrote the 'Blocks, States, and Transitions' section and edited some other sections. This was a good way to ensure the team was actually understanding the Yellow Paper, not just regurgitating techincal jargon."}
-    link={"https://antony-ss.notion.site/antony-ss/Digital-Identity-Blockchain-ERC721-NFTs-for-Digital-Identity-Management-and-Passwordless-Authenti-024e10e4b1d048b18133b5c7bfc0e6a9"}
+    link={"https://www.notion.so/illiniblockchain/Eth-Yellow-Paper-Summary-8ee3578b315a48b19261b02439c2da5e?pvs=4"}
     type = {"Technical Writing"}
     date={"Spring 2023"}/>
         <WritingCard position = "absolute" title={"Digital Identity & Blockchain: ERC721 NFTs for Digital Identity Management and Passwordless Authentication"} 
