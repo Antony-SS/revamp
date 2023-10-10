@@ -33,7 +33,7 @@ function Writing() {
     type = {"Developer Logs"}
     date={"Summer 2023"}/>
     <WritingCard position = "absolute" title={"Ethereum Yellow Paper Summary"} 
-    description={"This is a summary of the Ethereum Yellowpaper to allow anyone with general knowledge of computer science to understand Ethereum.  I wrote the 'Blocks, States, and Transitions' section and edited some other sections. This was a good way to ensure the team was actually understanding the Yellow Paper, not just regurgitating techincal jargon."}
+    description={"This is a summary of the Ethereum Yellowpaper to allow anyone with general knowledge of computer science to understand Ethereum.  I wrote the 'Blocks, States, and Transitions' section and edited some other sections. This was a good way to ensure the team was actually understanding the Yellow Paper, not just regurgitating technical jargon."}
     link={"https://www.notion.so/illiniblockchain/Eth-Yellow-Paper-Summary-8ee3578b315a48b19261b02439c2da5e?pvs=4"}
     type = {"Technical Writing"}
     date={"Spring 2023"}/>
