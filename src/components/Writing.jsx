@@ -42,6 +42,12 @@ function Writing() {
     link={"https://antony-ss.notion.site/antony-ss/Digital-Identity-Blockchain-ERC721-NFTs-for-Digital-Identity-Management-and-Passwordless-Authenti-024e10e4b1d048b18133b5c7bfc0e6a9"}
     type = {"Technical Writing"}
     date={"Summer 2022"}/>
+    
+    <WritingCard position = "absolute" title={"Song Vote | A Tutorial for Aspiring Developers on Algorand"} 
+    description={"A comprehensive tutorial for developers of all levels to create a voting dapp on the Algorand blockchain. Created for a Gitcoin bounty, published to the Algorand developer docs, and voted 2nd best community tutorial.  All you'll need is basic knowlege of python, javascript, and smart contracts."}
+    link={"https://developer.algorand.org/tutorials/song-vote-on-algorand-create-and-deploy-a-fully-functioning-dapp/"}
+    type = {"Tutorial"}
+    date={"Spring 2022"}/>
     <ContactModal isModalOpen={isModalOpen} onClose={closeModal}/>
     <Footer/>
       </VStack>
