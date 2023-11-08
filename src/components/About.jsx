@@ -33,7 +33,7 @@ function About() {
               <br/><br/>
               Currently I'm diving into robotics & autonomy.  I'm taking a class on mobile robotics and doing research on autonomous vehicles.  I see real potential for this technology to improve the human condition, and this is the most excited I've ever been about engineering.  
               <br/><br/>
-              Previously, I spent ~ 3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and lead a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
+              Previously, I spent ~ 3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and led a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
               <br/><br/>
               On a less serious note, I play soccer, <Link textColor={"grey"} href="https://www.goodreads.com/user/show/159524269-antony-silvetti-schmitt" isExternal>read</Link> fiction, love the outdoors, and am attempting to learn guitar.
             </Text>

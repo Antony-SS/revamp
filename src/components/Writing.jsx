@@ -23,7 +23,7 @@ function Writing() {
       </Box>
     </Container>
     <WritingCard position = "absolute" title={"Robotics & Autonmous Systems Logs"} 
-    description={"I want to work/go to grad school in this area, so I have ~ 5 months to learn as much as possible.  These logs help me structure my thoughts, retain what I learn, and track my progress.  Entries will reference both my research with AUVSL & my Mobile Robotics Class."}
+    description={"I'm in an all out sprint to learn as much about the math and software behind robotics and autonomy.  These logs help me structure my thoughts, retain what I learn, and track my progress.  Entries will reference both my research with AUVSL & my Mobile Robotics Class."}
     link={"https://antony-ss.notion.site/Robotics-Autonomous-Systems-Logs-723b38accd31492e892a4acb43d1ea85?pvs=4"}
     type = {"Learning Logs"}
     date={"Fall 2023"}/>
