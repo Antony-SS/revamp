@@ -26,16 +26,16 @@ function About() {
         <Container width={{base: "90%", md: "100%"}}>
           <Stack direction={"column"}>
             <Text fontSize={{base: 24, md: 24, lg: 28}} fontWeight={400}>
-              Hi, I'm Antony, a senior studying engineering at UIUC.  I'm interested in building technology to make our world a better place.
+              Hi, I'm Antony, an incoming masters student at Georiga Tech.
             </Text>
             <Text fontSize={{base: 12, md: 14}}>
-              I'm majoring in Industrial Engineering and Minoring in Computer Science.  I was born in Germany and raised in ( a suburb of ) Chicago.
+              I'm studying robotics, with a focus on mobile robotics. I was born in Germany and raised in ( a suburb of ) Chicago.  I did my undergrad @ UIUC where I studied Industrial Engineering & Computer Science.
               <br/><br/>
-              Currently I'm diving into robotics & autonomy.  I'm taking a class on mobile robotics and doing research on autonomous vehicles.  I see real potential for this technology to improve the human condition, and this is the most excited I've ever been about engineering.  
+              Currently I'm interning at Earthsense, an agtech startup, where I'm working on computer vision algorithms for their cover cropping robots.  
               <br/><br/>
               Previously, I spent ~ 3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and led a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
               <br/><br/>
-              On a less serious note, I play soccer, <Link textColor={"grey"} href="https://www.goodreads.com/user/show/159524269-antony-silvetti-schmitt" isExternal>read</Link> fiction, love the outdoors, and am attempting to learn guitar.
+              On a less serious note, I play soccer, <Link textColor={"grey"} href="https://www.goodreads.com/user/show/159524269-antony-silvetti-schmitt" isExternal>read</Link> fiction, rockclimb, and am attempting to learn guitar.
             </Text>
           </Stack>
         </Container>
