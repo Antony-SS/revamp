@@ -26,12 +26,12 @@ function About() {
         <Container width={{base: "90%", md: "100%"}}>
           <Stack direction={"column"}>
             <Text fontSize={{base: 24, md: 24, lg: 28}} fontWeight={400}>
-              Hi, I'm Antony, an incoming masters student at Georiga Tech.
+              Hi, I'm Antony, and I'm a computer vision engineer at Earthsense.
             </Text>
             <Text fontSize={{base: 12, md: 14}}>
-              I'm studying robotics, with a focus on mobile robotics. I was born in Germany and raised in ( a suburb of ) Chicago.  I did my undergrad @ UIUC where I studied Industrial Engineering & Computer Science.
+              I was born in Germany and raised in ( a suburb of ) Chicago.  I did my undergrad @ UIUC where I studied Industrial Engineering & Computer Science.
               <br/><br/>
-              Currently I'm interning at Earthsense, an agtech startup, where I'm working on computer vision algorithms for their cover cropping robots.  
+              I deferred grad school to work full time at <Link textColor={"grey"} href="https://www.earthsense.co/" isExternal>Earthsense</Link>, an agtech startup, where I'm working on vision & perception for our fleet of autonmous agriculural robots.
               <br/><br/>
               Previously, I spent ~ 3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and led a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
               <br/><br/>
