@@ -28,7 +28,7 @@ function Home() {
     zIndex={-1}
     >
     <GridItem rowSpan={{base: 1, md: 2}} colSpan={1} bg="#90CCF4" p={4} position= "relative" className="grid-item" minHeight={{ base : "100vh", md: "100vh"}} padding={5}>
-      <Box as={Link} href="/work" position={"relative"} zIndex={1000} display="block" w="100%" h="100%" padding={0} margin={0}>
+      <Box as={Link} href="https://antony-blog.notion.site/Projects-Dev-Logs-285a5377d6f1809b95e7d98ae64b2401?source=copy_link" isExternal position={"relative"} zIndex={1000} display="block" w="100%" h="100%" padding={0} margin={0}>
         <Square h = "100%">
           <Image src = {require("../resources/deskfinal.png")} alt="DeskSetUp" h = {{base: "48vh" , md: "50vh" , lg: "70vh"}}/>
         </Square>
@@ -36,8 +36,8 @@ function Home() {
         <Heading textColor={"white"} fontSize={30}> WORK </Heading>
         <Box position="relative" bottom={-2} left= {0}  w= "35px" h="4px" bg="white"/>
         <Text textColor = "white" position={"relative"} top={5} fontSize={{base: 16, md: 14, lg: 16}}>
-              A few projects I am proud of 
-            <br/>for work, for school, and others just for fun</Text>
+              Projects & developer logs 
+            <br/>from school, work, and personal projects</Text>
         </Box>
       </Box>
     </GridItem>
@@ -50,8 +50,8 @@ function Home() {
           <Heading textColor = "white" fontSize={30}> WRITING </Heading>
           <Box position="relative" bottom={-2} left={0} w="35px" h="4px" bg="white"/>
             <Text position={"relative"} textColor= "white" top={4} fontSize={{base: 16, md: 14, lg: 16}}>
-              Collection of my technical writing,
-            <br/>random thoughts, and developer logs </Text>
+              Ramblings on life
+            <br/>and other non-technical things </Text>
         </Box>
       </Box>
     </GridItem>

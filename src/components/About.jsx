@@ -26,16 +26,16 @@ function About() {
         <Container width={{base: "90%", md: "100%"}}>
           <Stack direction={"column"}>
             <Text fontSize={{base: 24, md: 24, lg: 28}} fontWeight={400}>
-              Hi, I'm Antony, and I'm a computer vision engineer at Earthsense.
+              Hi, I'm Antony, a masters student at Georgia Tech.
             </Text>
             <Text fontSize={{base: 12, md: 14}}>
-              I was born in Germany and raised in ( a suburb of ) Chicago.  I did my undergrad @ UIUC where I studied Industrial Engineering & Computer Science.
+              I'm studying robotics, with a focus on perception and localization. I was born in Germany and raised in ( a suburb of ) Chicago.  I did my undergrad @ UIUC where I studied Industrial Engineering & Computer Science.
               <br/><br/>
-              I deferred grad school to work full time at <Link textColor={"grey"} href="https://www.earthsense.co/" isExternal>Earthsense</Link>, an agtech startup, where I'm working on vision & perception for our fleet of autonmous agriculural robots.
+              Previously, I worked for a year as a Computer Vision Engineer at Earthsense, a robotics startup in the agtech space.  I supported vision and perception across our fleet of agricultural robots.  I also led the covercropping project, where I oversaw engineering and business development for the firm's covercropping robots.
               <br/><br/>
-              Previously, I spent ~ 3 years in the blockchain space.  I've worked internships at two fortune 500 companies, completed bounties, and led a smart contract security team at <Link textColor={"grey"} href="https://illiniblockchain.com/" isExternal>Illini Blockchain</Link>.  The technology interests me to this day and I believe it has the power to revolutionize underdeveloped economies.
+              I want to work with high performing, passionate people to build products that people love.  I enjoy working with customers as much as I enjoy engineering, and my best role is likely a hybrid of the two.
               <br/><br/>
-              On a less serious note, I play soccer, <Link textColor={"grey"} href="https://www.goodreads.com/user/show/159524269-antony-silvetti-schmitt" isExternal>read</Link> fiction, rockclimb, and am attempting to learn guitar.
+              On a less serious note, I like to rock climb, run, and love the outdoors.
             </Text>
           </Stack>
         </Container>
