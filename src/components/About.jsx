@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ChakraProvider, Stack, Box, Heading, Image, Text, Link } from "@chakra-ui/react";
+import { Container, ChakraProvider, Stack, Box, Heading, Image, Text } from "@chakra-ui/react";
 import CreateTheme from "../ChakraStyles/CreateTheme"
 import Navbar from "./Shared/Navbar/Navbar";
 import { useState } from "react";
