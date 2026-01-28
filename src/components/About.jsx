@@ -3,7 +3,7 @@ import { Container, ChakraProvider, Stack, Box, Image, Text, Link, HStack } from
 import CreateTheme from "../ChakraStyles/CreateTheme"
 import Navbar from "./Shared/Navbar/Navbar";
 import { useState } from "react";
-import {  } from ".";
+import Footer from "./Shared/Footer";
 
 function About() {
   // const theme = CreateTheme("#F3D250");
@@ -15,8 +15,10 @@ function About() {
   // };
   return (
     <ChakraProvider theme={theme}>
+    <Box minH="100vh" display="flex" flexDir="column">
     <Navbar backgroundColor={"white"} setIsModalOpen={setIsModalOpen}/>
-    <Stack direction={"column"} position = "absolute" top = "15vh" height = "10" width= "100%" margin={0} padding={0} alignItems={"center"}>
+    <Box flex="1" mt="15vh">
+    <Stack direction={"column"} flex="1" width= "100%" margin={0} padding={0} alignItems={"center"}>
       <Stack direction={{base: "column", md: "row"}} alignItems={{base: "center", md: "left"}}>
         <Image margin={5} src = {require("../resources/profile1.png")} boxSize={{base: "325px", md: "400px"}} alt='Picture of me with a robot at a corn field in India!' borderRadius={20} boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)" />
         <Container width={{base: "90%", md: "100%"}}>
@@ -47,6 +49,9 @@ function About() {
         </Container>
       </Stack>
     </Stack>
+    </Box>
+      <Footer />
+    </Box>
     </ChakraProvider>
   );
 }
