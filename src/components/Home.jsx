@@ -1,10 +1,10 @@
 import React from "react";
 import { ChakraProvider, Grid, GridItem, Link, Box, Text, Square, Image, Heading, VStack } from "@chakra-ui/react";
-import Logo from "./Shared/Navbar/Logo";
-import Contact from "./Shared/Navbar/Contact";
+// import Logo from "./Shared/Navbar/Logo";
+// import Contact from "./Shared/Navbar/Contact";
 import "./Shared/GridItem.css";
 import CreateTheme from "../ChakraStyles/CreateTheme";
-import { useState } from "react";
+// import { useState } from "react";
 
 function Home() {
   const theme = CreateTheme("white");
@@ -51,8 +51,8 @@ function Home() {
           <Heading textColor = "black" fontSize={30}> WRITING </Heading>
           <Box position="relative" bottom={-2} left={0} w="35px" h="4px" bg="black"/>
             <Text position={"relative"} textColor= "black" top={4} fontSize={{base: 16, md: 14, lg: 16}}>
-              An effort to 
-            <br/>write more expressively</Text>
+              An attempt at 
+            <br/>more narrative writing</Text>
         </Box>
       </Box>
     </GridItem>
