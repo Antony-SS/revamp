@@ -1,8 +1,11 @@
 .grid-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .grid-item:hover {
-    /* transform: scale(0.95); */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) inset; /* Add box shadow to create the sinking effect */
-  }
+  /* existing transition rule stays */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* remove any border/outline props */
+
+  /* two concentric shadows:  white ring, then black ring            */
+  /* syntax: x-offset y-offset blur spread color                     */
+  box-shadow: inset 0 0 0 10px #fff,        /* 5-px white buffer            */
+              inset 0 0 0 14px #000;        /* +3-px black border (5+3 = 8) */
+}

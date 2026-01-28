@@ -1,47 +1,51 @@
 import React from "react";
-import { Container, ChakraProvider, Stack, Box, Heading, Image, Text } from "@chakra-ui/react";
+import { Container, ChakraProvider, Stack, Box, Image, Text, Link, HStack } from "@chakra-ui/react";
 import CreateTheme from "../ChakraStyles/CreateTheme"
 import Navbar from "./Shared/Navbar/Navbar";
 import { useState } from "react";
-import { ContactModal, Footer } from ".";
+import {  } from ".";
 
 function About() {
-  const theme = CreateTheme("#F3D250");
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const theme = CreateTheme("#F3D250");
+  const theme = CreateTheme("white");
+  const [, setIsModalOpen] = useState(false);
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
   return (
     <ChakraProvider theme={theme}>
-    <Navbar backgroundColor={"#F3D250"} setIsModalOpen={setIsModalOpen}/>
-    <Stack direction={"column"} position = "absolute" top = "25vh" height = "10" width= "100%" margin={0} padding={0} alignItems={"center"}>
-      <Container minWidth = "100%" display= "flex" flexDirection= "column"  textAlign= "center" alignItems={"center"} justifyContent={"center"} margin={0} paddingBottom={{base: "20px", md: "45px"}}>
-            <Box border="4px solid rgba(0, 0, 0, 0.2)" borderRadius="10px" padding={0} margin={0} textAlign={"center"} justifyContent={"center"}>
-          <Heading paddingLeft={10} paddingRight={10} paddingBottom={4} fontSize={{base: 70, md: 160, lg: 230}} textColor= "black" opacity={.15}>A B O U T</Heading>
-        </Box>
-      </Container>
+    <Navbar backgroundColor={"white"} setIsModalOpen={setIsModalOpen}/>
+    <Stack direction={"column"} position = "absolute" top = "15vh" height = "10" width= "100%" margin={0} padding={0} alignItems={"center"}>
       <Stack direction={{base: "column", md: "row"}} alignItems={{base: "center", md: "left"}}>
-        <Image margin={5} src = {require("../resources/profile.jpg")} boxSize={{base: "325px", md: "400px"}} alt='Picture of Me' borderRadius={10} boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)" />
+        <Image margin={5} src = {require("../resources/profile1.png")} boxSize={{base: "325px", md: "400px"}} alt='Picture of me with a robot at a corn field in India!' borderRadius={20} boxShadow="0px 0px 10px rgba(0, 0, 0, 0.2)" />
         <Container width={{base: "90%", md: "100%"}}>
           <Stack direction={"column"}>
-            <Text fontSize={{base: 24, md: 24, lg: 28}} fontWeight={400}>
-              Hi, I'm Antony, a masters student at Georgia Tech.
+            <Text fontSize={{base: 24, md: 24, lg: 28}} fontWeight={400} textAlign={{base: "center", md: "left"}}>
+              Hi, I'm Antony!
             </Text>
-            <Text fontSize={{base: 12, md: 14}}>
-              I'm studying robotics, with a focus on perception and localization. I was born in Germany and raised in ( a suburb of ) Chicago.  I did my undergrad @ UIUC where I studied Industrial Engineering & Computer Science.
+            <Text fontSize={{base: 14, md: 16}}>
+              A few things about me: Studied Computer Science at UIUC.  Discovered robotics my final year of undergrad and haven't looked back.  
               <br/><br/>
-              Previously, I worked for a year as a Computer Vision Engineer at Earthsense, a robotics startup in the agtech space.  I supported vision and perception across our fleet of agricultural robots.  I also led the covercropping project, where I oversaw engineering and business development for the firm's covercropping robots.
+              Spent some time doing computer vision at an <Link textColor={"blue"} textDecoration="underline" href="https://www.earthsense.co/" isExternal>agrobotics startup</Link>, 
+              gained an appreciation for corn.  Realized I didn't have the mathematical foundations to build SLAM systems from scratch, returned to school.
               <br/><br/>
-              I want to work with high performing, passionate people to build products that people love.  I enjoy working with customers as much as I enjoy engineering, and my best role is likely a hybrid of the two.
+              Now at Georgia Tech, focusing on perception and localization for mobile robots.  Involved at the <Link textColor={"blue"} textDecoration="underline" href="https://www.robotarium.gatech.edu/" isExternal>robotarium</Link>.
               <br/><br/>
-              On a less serious note, I like to rock climb, run, and love the outdoors.
+              I document my projects and technical writing <Link textColor={"blue"} textDecoration="underline" href="https://antony-blog.notion.site/projects-and-technical-writing" isExternal>here</Link>.  Would like to start writing more narratively on my <Link textColor={"blue"} textDecoration="underline" href="https://tonytigerz.substack.com/" isExternal>blog</Link>.
             </Text>
+            <Box width={"100%"} marginTop={3}>
+              {/* <Box width={{base: "95%", md: "95%"}} height="1px" margin="0 auto" backgroundColor={"black"} opacity={.2}></Box> */}
+              <HStack spacing={{base: 3, md: 5}} justifyContent={{base: "center", md: "flex-start"}} marginTop={3}>
+                <Link href="#" onClick={(e) => e.preventDefault()} fontSize={{base: 12, md: 14}} textColor={"grey"} textDecoration="underline" cursor="pointer">antony@silvettischmitt dot net</Link>
+                <Link href = "https://github.com/Antony-SS" fontSize={{base: 12, md: 14}} isExternal textDecoration="underline" textColor={"grey"}>github</Link>
+                {/* <Link href = "https://twitter.com/Johann_Antony" fontSize={{base: 12, md: 14}} isExternal textDecoration="underline" textColor={"grey"}>twitter</Link> */}
+                <Link href = "https://www.linkedin.com/in/antony-silvetti-schmitt/" fontSize={{base: 12, md: 14}} isExternal textDecoration="underline" textColor={"grey"}>linkedin</Link>
+              </HStack>
+            </Box>
           </Stack>
         </Container>
       </Stack>
-      <ContactModal isModalOpen={isModalOpen} onClose={closeModal}/>
-      <Footer/>
     </Stack>
     </ChakraProvider>
   );
