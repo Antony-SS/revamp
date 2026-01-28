@@ -1,6 +1,5 @@
-import { Box, VStack, Heading, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, VStack, Text } from "@chakra-ui/react";
 import React from "react"
-import { Link } from "react-router-dom";
 
 function Footer({top}) {
   return (
