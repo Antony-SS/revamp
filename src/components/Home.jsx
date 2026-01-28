@@ -44,10 +44,10 @@ function Home() {
     {/* <GridItem rowSpan={{base: 1, md: 1}} colSpan={1} bg="#F78888" p={4} position= "relative" className="grid-item" minHeight={{ base : "100vh", md: "auto"}}> */}
     <GridItem rowSpan={{base: 1, md: 1}} colSpan={1} bg="white" p={4} position= "relative" className="grid-item" minHeight={{ base : "100vh", md: "auto"}}>
       <Box as={Link} href="https://tonytigerz.substack.com/" isExternal display="block" w="100%" h="100%" paddingBottom= "10vh" margin={0}>
-        <Square h="100%" padding={0}>
+        <Square h="100%" paddingLeft={{base: 0, md: 10}}>
           <Image src = {require("../resources/calvin_hobbes_log.png")} h= {{base: "44vh", md: "24vh", lg: "32vh"}}/>
         </Square>
-        <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "36%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "6%"}}>
+        <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "36%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "8%"}}>
           <Heading textColor = "black" fontSize={30}> WRITING </Heading>
           <Box position="relative" bottom={-2} left={0} w="35px" h="4px" bg="black"/>
             <Text position={"relative"} textColor= "black" top={4} fontSize={{base: 16, md: 14, lg: 16}}>
@@ -62,7 +62,7 @@ function Home() {
       <Square h="100%" >
         <Image src = {require("../resources/calvin.png")} h= {{base: "48vh", md: "28vh", lg: "36vh"}}/>
       </Square>
-    <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "36%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "6%"}}>
+    <Box position="absolute" bottom={0} left={{base: "18%", md: 0}} right= {{base: "18%", md: 0}} h = {{base: "21%", md: "36%" }}  display="flex" textAlign = {{base: "center", md:"left"}}   flexDirection="column" alignItems={{ base: "center", md: "flex-start" }} paddingLeft= {{base: "0", md: "8%"}}>
       <Heading fontSize={30} textColor={"black"}> ABOUT </Heading>
       <Box position="relative" bottom={-2} left={0} w= "35px" h="4px" bg="black"/>
       <Text textColor = "black" position={"relative"} top={4} fontSize={{base: 16, md: 14, lg: 16}}>
